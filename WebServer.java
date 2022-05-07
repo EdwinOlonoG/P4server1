@@ -17,14 +17,14 @@ public class WebServer {
     //endpoints
     private static final String STATUS_ENDPOINT = "/status";
     private static final String TIME_ENDPOINT = "/time";  
-    private static String WORKER_ADDRESS_1 = args[1] + TIME_ENDPOINT;
-    private static String WORKER_ADDRESS_2 = args[2] + TIME_ENDPOINT; 
-    private static String WORKER_ADDRESS_3 = args[3] + TIME_ENDPOINT; 
-    private static String WORKER_ADDRESS_4 = args[4] + TIME_ENDPOINT;
-    private static String checkStatus1 = args[1] + STATUS_ENDPOINT;
-    private static String checkStatus2 = args[2] + STATUS_ENDPOINT; 
-    private static String checkStatus3 = args[3] + STATUS_ENDPOINT; 
-    private static String checkStatus4 = args[4] + STATUS_ENDPOINT;  
+    private static String WORKER_ADDRESS_1;
+    private static String WORKER_ADDRESS_2; 
+    private static String WORKER_ADDRESS_3; 
+    private static String WORKER_ADDRESS_4;
+    private static String checkStatus1;
+    private static String checkStatus2; 
+    private static String checkStatus3; 
+    private static String checkStatus4;  
     private final int port;
     private HttpServer server;
     public static void main(String[] args) {
